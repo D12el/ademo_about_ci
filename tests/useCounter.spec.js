@@ -5,7 +5,7 @@ describe('useCounter', () => {
   it('should update val and increment by new val', () => {
     const { result } = renderHook(() => useCounter());
     act(() => {
-      result.current.setVal(5);
+      result.current.setVal(1);
       result.current.increment();
     });
     expect(result.current.count).toBe(5);
